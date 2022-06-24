@@ -1,26 +1,26 @@
-import React from "react";
-import '../Popular/popular.css';
+// import React from "react";
+// import '../Popular/popular.css';
 
 
-function Popular(){
+// function Popular(){
 
-    return(
+//     return(
 
-        <div className="bodyPopular">
+//         <div className="bodyPopular">
            
-           <div class="row">
+           {/* <div class="row">
 	<div class="containerPopular">
 		<div class="test_box box-01 col-xs-5 col-md-4">
 			<div class="inner">
 				<a href="#" class="test_click">
 					<div class="flex_this">
 						<h1 class="test_title">Title</h1>
-						<span class="test_link">Link</span>
+						<span class="test_link">See more</span>
 					</div>
 				</a>
 			</div>
-		</div>
-		<div class="test_box box-02 col-xs-5 col-md-4">
+		</div> */}
+		{/* <div class="test_box box-02 col-xs-5 col-md-4"> */}
 			{/* <div class="inner">
 				<a href="#" class="test_click">
 					<div class="flex_this">
@@ -31,7 +31,7 @@ function Popular(){
 			</div> */}
 			
 			{/* inicio tarjeta cine */}
-			<div class="main-container">
+			{/* <div class="main-container">
 			<div class="poster-container">
 				<a href="#"><img src="https://i.ibb.co/Zd51z5c/justice-league.jpg" class="poster" /></a>
 			</div>
@@ -44,9 +44,9 @@ function Popular(){
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
 			</div>
-		</div>
+		</div> */}
 			{/* end tarjeta cine */}
-		
+{/* 		
 		</div>
 		<div class="test_box box-03 col-xs-5 col-md-4">
 			<div class="inner">
@@ -133,9 +133,10 @@ function Popular(){
 			</div>
 		</div>
 
-	</div>
-</div>
-        </div>
-    );
-}
-export default Popular; 
+ */}
+ 	{/* </div>
+</div> */}
+//         </div>
+//     );
+// }
+// export default Popular; 

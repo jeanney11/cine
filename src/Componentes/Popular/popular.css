@@ -12,7 +12,7 @@
   } */
   
   
-  @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+  /* @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
 .bodyPopular {
 	background: transparent !important;
 	background: -webkit-linear-gradient(left top, #027, #48a);
@@ -42,7 +42,7 @@
 }
 
 /* PEN STYLES ========== */
-.row {
+/* .row {
 	margin: 0;
 }
 
@@ -80,12 +80,12 @@
 	text-decoration: none;
 	-webkit-transition: all 300ms ease;
 	transition: all 300ms ease;
-}
-.test_box .inner .test_click:hover {
+} */
+/* .test_box .inner .test_click:hover {
 	background-color: rgba(0,100,255,.5); 
 	mix-blend-mode: hard-light;
-}
-.flex_this {
+} */
+/* .flex_this {
 	-webkit-align-content: center;
 	-ms-flex-line-pack: center;
 	align-content: center;
@@ -98,18 +98,18 @@
 	transition: all 300ms ease;
 	width: 100%;
 
-}
-.test_box .inner .test_click:hover .flex_this {
+} */
+/* .test_box .inner .test_click:hover .flex_this {
 	margin-top: -5px;
-}
+} */
 
-.test_title {
+/* .test_title {
 	display: block;
 	font-weight: 700;
 	margin: 0 0 20px;
 	width: 100%;
-}
-.test_link {
+} */
+/* .test_link {
 	border: 2px solid #fff;
 	display: inline-block;
 	font-size: .8em;
@@ -118,44 +118,44 @@
 	margin: 0 auto;
 	padding: 10px 30px;
 	text-transform: uppercase;
-}
+} */
 
-.box-01 .inner {
+/* .box-01 .inner {
 	background-image: url('https://picsum.photos/1024/768?image=1033');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.box-02 .inner {
+} */
+/* .box-02 .inner {
 	background-image: url('https://picsum.photos/1024/768?image=967');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.box-03 .inner {
+} */
+/* .box-03 .inner {
 	background-image: url('https://picsum.photos/1024/768?image=924');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.box-04 .inner {
+} */
+/* .box-04 .inner {
 	background-image: url('https://picsum.photos/1024/768?image=1073');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.box-05 .inner {
+} */
+/* .box-05 .inner {
 	background-image: url('https://picsum.photos/1024/768?image=1032');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.box-06 .inner {
+} */
+/* .box-06 .inner {
 	background-image: url('https://picsum.photos/1024/768?image=1080');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+}  */
 
 
 
@@ -176,9 +176,11 @@ body {
 	height: 100vh;
 } */
 
-.hero-container {
+.bodyCard {
 	margin: auto;
-	display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-container {
@@ -198,20 +200,20 @@ body {
 
 .poster {
 	width: 100%;
-	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.762);
 }
 
 .ticket-container {
-	background: #fff;
+	background: #0a0a0a;
 	width: 270px;
-	height: 520px;
+	height: 460px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border-radius: 5px;
 	position: absolute;
 	top: 20px;
-	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.75);
 	opacity: 0;
 }
 
@@ -276,21 +278,27 @@ body {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
+	
 }
 
 .ticket__movie-title {
 	text-transform: uppercase;
 	margin-bottom: 5px;
+	color:rgb(250, 245, 250);
+	text-shadow: 0 5px 20px 3px rgba(6, 6, 6, 0.75);
 }
 
 .ticket__movie-slogan {
-	color: #999;
+	color: rgba(164, 161, 163, 0.944);
 	font-size: 0.9rem;
+	
+	
 	margin-bottom: 20px;
+	text-shadow: 0 5px 20px 3px rgb(13, 13, 13);
 }
 
 .ticket__current-price {
-	color: #69c982;
+	color: #030303;
 	font-size: 1.4rem;
 	font-weight: bold;
 }
@@ -313,4 +321,9 @@ body {
 	border: 0;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+.btn{
+	color: rgb(255, 0, 166);
+	text-shadow: 0 5px 20px 3px rgb(13, 13, 13);	
 }

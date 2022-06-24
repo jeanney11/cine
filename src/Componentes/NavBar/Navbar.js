@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import Logo from "../Imagenes/logo.png";
+import { Link as LinkRouter } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,16 +11,24 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+          <LinkRouter to="/">
+            <a className="btn btn-transparent dropdown">
+              HOME
+            </a>
+          </LinkRouter>
+          </li>
+          {/* <li>
+            <a href="#"></a>
+          </li> */}
+          <li>
+          <LinkRouter to="/Favorite"><a className="btn btn-transparent" >
+                 FAVORITE
+                </a> </LinkRouter>
           </li>
           <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Favorite</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+          <LinkRouter to="/SingIn"><a className="btn btn-transparent" >
+                 Login
+                </a> </LinkRouter>
           </li>
         </ul>
       </nav>

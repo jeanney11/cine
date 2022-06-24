@@ -5,6 +5,8 @@
   /* background-image: linear-gradient(to right top, #44075e 0%, #243d4e 100%); */
   background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
   display: flex;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.241);
+  ;
 }
 
 nav {
@@ -25,7 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 18px;
+  padding: 8px;
   font-family: "Open Sans";
   text-transform:uppercase;
   color: rgba(1, 13, 42, 0.5);
