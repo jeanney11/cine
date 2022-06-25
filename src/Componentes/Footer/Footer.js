@@ -7,39 +7,39 @@ function Footer(){
     return(
         <div className="bodyFooter">
 
-<div class="page-wrapper">
+<div className="page-wrapper">
     <div id="waterdrop"></div>
     <footer>
       
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="row">
 
-            <div class="col-md-3">
-              <div class="footer-site-info">2020 © <a href="https://www.youtube.com/watch?v=pdr4IzBpacI&t=34s" target="_blank">Top HTML & CSS Program </a></div>
+            <div className="col-md-3">
+              <div className="footer-site-info">2022 © <a href="https://www.youtube.com/watch?v=pdr4IzBpacI&t=34s" target="_blank">Jeanney Claivel Reyes Z. </a></div>
             </div>
 
             
 
-            <div class="col-md-3">
+            <div className="col-md-3">
               <div id="footer-socials">
-                <div class="socials inline-inside socials-colored">
+                <div className="socials inline-inside socials-colored">
 
-                  <a href="#" target="_blank" title="Facebook" class="socials-item">
-                    <i class="fab fa-facebook-f facebook"></i>
+                  <a href="https://www.facebook.com/" target="_blank" title="Facebook" className="socials-item">
+                    <i className="fab fa-facebook-f facebook"></i>
                   </a>
-                  <a href="#" target="_blank" title="Twitter" class="socials-item">
-                    <i class="fab fa-twitter twitter"></i>
+                  <a href="https://www.linkedin.com/in/jeanney-claivel-reyes-b6071520b/" target="_blank" title="Linkelin" className="socials-item">
+                    <i className="fab fa-twitter twitter"></i>
 
                   </a>
-                  <a href="#" target="_blank" title="Instagram" class="socials-item">
-                    <i class="fab fa-instagram instagram"></i>
+                  <a href="https://api.whatsapp.com/send?phone=91154162440" target="_blank" title="Whatshap" className="socials-item">
+                    <i className="fab fa-instagram instagram"></i>
                   </a>
-                  <a href="#" target="_blank" title="YouTube" class="socials-item">
-                    <i class="fab fa-youtube youtube"></i>
+                  <a href="https://github.com/jeanney11" target="_blank" title="GitHub" className="socials-item">
+                    <i className="fab fa-youtube youtube"></i>
                   </a>
-                  <a href="#" target="_blank" title="Telegram" class="socials-item">
-                    <i class="fab fa-telegram telegram"></i>
+                  <a href="https://jclayrz11@gmail.com" target="_blank" title="Gmail" className="socials-item">
+                    <i className="fab fa-telegram telegram"></i>
                   </a>
                 </div>
               </div>

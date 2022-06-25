@@ -4,10 +4,12 @@ import Navbar from "./Componentes/NavBar/Navbar.js";
 import Home from "./Componentes/Home/Home.js";
 import Footer from "./Componentes/Footer/Footer.js";
 import { useEffect, useState } from "react";
-import Login from "./Componentes/Login/SignIn.js";
+// import Login from "./Componentes/Login/SignIn.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDetails from "./Componentes/MovieDetails/MovieDetails";
-import SignIn from "./Componentes/Login/SignIn.js";
+import Favorite from "./Componentes/Favorite/Favorite.js";
+import Result from "./Componentes/Search/Result.js";
+// import SignIn from "./Componentes/Login/SignIn.js";
 
 function App() {
 
@@ -41,12 +43,13 @@ useEffect(() =>{
    tempMoviesFavs
  )
 
-
+  
     const btn = e.currentTarget;
     const parent = btn.parentElement;
     const imgURL = parent.querySelector('img')?.getAttribute('src');
-    const titulo = parent.querySelector('h4').innerText;
-    const overview = parent.querySelector('p').innerText;
+    console.log(imgURL)
+    const titulo = parent.querySelector('h4');
+    const overview = parent.querySelector('p');
    
    
     const movieData = {
@@ -83,10 +86,12 @@ useEffect(() =>{
 
       <Routes>
          <Route path="/" element={<Home addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
-         <Route path="/SignIn" element={<Login/>}/>
-        {/* <Route path="/Favorite" element={<MovieDetails/> } />
-        <Route path="/signin" element={<Login/>}/> <Popular/> */}
+   
+        <Route path="/Favorito" element={<Favorite favorites ={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs}/> } />
+ 
         <Route path="/MovieDetails" element={<MovieDetails addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
+
+        <Route path="/Result" element={<Result addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
         
       </Routes>
 

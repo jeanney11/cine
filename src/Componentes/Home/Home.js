@@ -2,8 +2,7 @@ import React from "react";
 //import "../Home/home.css";
 import "../Popular/popular.css";
 import AddNow from "../AddNow/AddNow";
-import InfoMovie from "../Info/InfoMovie";
-//import Popular from "../Popular/Popular";
+import InfoMovie from "../Info/InfoMovie"
 import SignIn from "../Login/SignIn";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -37,20 +36,20 @@ function Home(props) {
 
       {!token && <Link to="/" />}
       {/* estructura basica */}
-      <div class="bodyCard">
+      <div className="bodyCard">
         {moviesList.map((oneMovie, idx) => {
           return (
-            <div class="main-container" key={idx}>
-              <div class="poster-container">
+            <div className="main-container" key={idx}>
+              <div className="poster-container">
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`}
-                  class="poster"
+                  className="poster"
                 />
               </div>
-              <div class="ticket-container">
-                <div class="ticket__content">
-                  <h4 class="ticket__movie-title">{oneMovie.title}</h4>
-                  <p class="ticket__movie-slogan">
+              <div className="ticket-container">
+                <div className="ticket__content">
+                  <h4 className="ticket__movie-title">{oneMovie.title}</h4>
+                  <p className="ticket__movie-slogan">
                     {oneMovie.overview.substring(0, 60)} ..
                   </p>
                   {/* <p class="ticket__current-price">$20.75</p>

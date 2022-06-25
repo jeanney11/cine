@@ -52,8 +52,8 @@ function AddNow() {
   return (
     <div className="App">
       <div style={{ textAlign: "center" }}>
-        <h2>React Carousel Minimal</h2>
-        <p>Easy to use, responsive and customizable carousel component for React Projects.</p>
+        <h2 className='titleDetails'>Películas Recomendadas</h2>
+        {/* <p>Easy to use, responsive and customizable carousel component for React Projects.</p> */}
         <div style={{
           padding: "0 20px"
         }}>

@@ -47,9 +47,9 @@ function SignIn(){
         <>
         {/* // <div className="bodySignIn"> */}
 
-    {/* <div class="backgroundSignIn">
-        <div class="shape"></div>
-        <div class="shape"></div>
+    {/* <div className="backgroundSignIn">
+        <div className="shape"></div>
+        <div className="shape"></div>
     </div>
     <form className="form" onClick={submitHandler}>
         <h3>Login Here</h3>
@@ -62,9 +62,9 @@ function SignIn(){
 
         <button type="submit">Log In</button> */}
 
-        {/* <div class="social">
-          <div class="go"><i class="fab fa-google"></i>  Google</div>
-          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        {/* <div className="social">
+          <div className="go"><i className="fab fa-google"></i>  Google</div>
+          <div className="fb"><i className="fab fa-facebook"></i>  Facebook</div>
         </div> */}
     {/* </form> */}
 

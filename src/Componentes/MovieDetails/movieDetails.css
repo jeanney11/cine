@@ -1,7 +1,6 @@
 
 .bodyMovieDetails{
-    display: flex;
-   
+    display: flex; 
 }
 
 ul{
@@ -13,26 +12,30 @@ ul{
    border-bottom-right-radius: 15px;
 }
 .titleDetails{
+    color:white;
     font-size: 35px;
     text-align: center;
     color: #550370;
     text-shadow: 0 0 10px #d0b5d9c4, 0 0 20px #c000ffb5, 0 0 30px #c000ffb5, 0 0 40px #c000ffb5, 0 0 50px #c000ffb5, 0 0 60px #c000ffb5, 0 0 70px #c000ffb5;
 }
 .subtitle{
+    color:white;
     margin-left: 30px;
 
 }
 .parraDetails{
+    color:white;
+    font-size: 1.1em;
     text-align: justify;
     margin: 20px;
     text-shadow: 0 0px 10px black;
-
 }
 .favourite-btn{
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14)) !important;
-	width: 300px;
-   margin-left: 250px;
-	font-size: 18px;
+	width: 30%;
+   margin-left: 25rem;
 	padding: 0.5rem 3rem;
 	outline: none;
+    height: 3em;
 }
+
