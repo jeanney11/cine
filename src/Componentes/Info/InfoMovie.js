@@ -7,17 +7,12 @@ function InfoMovie() {
       <div className="top">
         <div className="columns">
           <div className="column is-full featured_wrapper p-0">
-            <img
-              src="https://raw.githubusercontent.com/brixiobodino/coffeholic/main/banner.jpg"
-              className="featured"
-            />
-            <div className="title_wrapper">
+          <iframe width="1200" height="400" marginLeft="20" src="https://www.youtube.com/embed/gUtKhMLE2BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {/* <div className="title_wrapper">
               <span className="has-text-white">Trending Today</span>
-              <h1 className="title is-1 has-text-white">
-                The Untold Story of the great Lorem Ipsum
-              </h1>
+              
               <button className="buttonHome is-medium">Watch It Now</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

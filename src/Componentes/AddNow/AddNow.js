@@ -1,8 +1,43 @@
 import React from 'react';
 import { Carousel } from 'react-carousel-minimal';
+import { useEffect } from 'react';
+import axios from 'axios';
+import { useState } from 'react';
+
+
+
+
+
+
 
 function AddNow(props) {
- const data = [
+  const [rateMovie, setRateMovie] = useState([]);
+  
+  
+  useEffect(() => {
+    const endPonint =
+      "https://api.themoviedb.org/3/discover/movie?api_key=2d042291f5d9997fd302638a2ac82ed8&language=es-ES&page=1";
+    axios
+      .get(endPonint)
+      .then((response) => {
+        console.log(response);
+        const prueba = []
+        const apiData = response.data.results;
+        // cgl de apidata se convierte en la actualizacion del estado
+
+        apiData.map(item =>{
+          prueba.push(item.backdrop_path)
+        })
+        setRateMovie(prueba);
+      })
+
+
+  }, [setRateMovie]);
+  
+  console.log(rateMovie);
+
+
+  const data = [
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
       caption: "San Francisco"

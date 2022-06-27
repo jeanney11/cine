@@ -4,12 +4,12 @@ import Navbar from "./Componentes/NavBar/Navbar.js";
 import Home from "./Componentes/Home/Home.js";
 import Footer from "./Componentes/Footer/Footer.js";
 import { useEffect, useState } from "react";
-// import Login from "./Componentes/Login/SignIn.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDetails from "./Componentes/MovieDetails/MovieDetails";
 import Favorite from "./Componentes/Favorite/Favorite.js";
 import Result from "./Componentes/Search/Result.js";
-// import SignIn from "./Componentes/Login/SignIn.js";
+import StarFilter from "./Componentes/Ranking/StarFilter";
+
 
 function App() {
 
@@ -92,6 +92,8 @@ useEffect(() =>{
         <Route path="/MovieDetails" element={<MovieDetails addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
 
         <Route path="/Result" element={<Result addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
+
+        <Route path="/StarFilter" element={<StarFilter addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
         
       </Routes>
 

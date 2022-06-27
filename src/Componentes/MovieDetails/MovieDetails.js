@@ -2,6 +2,7 @@ import React from "react";
 import "../MovieDetails/movieDetails.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import swal from "sweetalert";
 import Ranking from '../Ranking/Ranking.js';
 //import { FaBeer } from 'react-icons/fa';
 
@@ -36,7 +37,7 @@ function MovieDetails(props) {
 
   return (
     <div className="bodyMovieDetails">
-      {!movie && <p>Cargando...</p>}
+      {!movie && <p>charging...</p>}
       {movie && (
         <div className="bodyMovieDetails">
           <div className="col-4">
@@ -58,7 +59,13 @@ function MovieDetails(props) {
             <div>
               <button
                 className="favourite-btn"
-                onClick={(e) => props.addOrRemoveFromFavs(e)}
+                onClick={(e) => {props.addOrRemoveFromFavs(e);
+                  swal({
+                    icon: "success",
+                  });  
+                }}
+                
+                
                 data-movie-id={movie.id}>Favorite
                 
               </button>
