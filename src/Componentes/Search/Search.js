@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 import "../Search/search.css";
@@ -49,7 +49,7 @@ function Search() {
 
 export default Search;
 
-{
+
   /* <form className="d-flex alig-items-center" onSubmit={submitHandler}>
   
         <label className="form-label mb-0 mx-4 my-2">
@@ -58,7 +58,7 @@ export default Search;
           <button type="submit" className="btn btn-success  mx-3">Buscar</button>
         
       </form> */
-}
+
 
 /* function Search() {
     

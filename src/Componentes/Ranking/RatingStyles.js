@@ -5,7 +5,7 @@ export const Container = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-  
+  margin-bottom: 30px;
    font-size: 60px;
 `
 export const Radio = styled.input`

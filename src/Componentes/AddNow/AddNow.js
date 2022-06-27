@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-carousel-minimal';
 
-function AddNow() {
+function AddNow(props) {
  const data = [
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
@@ -49,18 +49,21 @@ function AddNow() {
     fontSize: '20px',
     fontWeight: 'bold',
   }
+
+  
   return (
     <div className="App">
       <div style={{ textAlign: "center" }}>
         <h2 className='titleDetails'>Películas Recomendadas</h2>
         {/* <p>Easy to use, responsive and customizable carousel component for React Projects.</p> */}
         <div style={{
-          padding: "0 20px"
+          padding: "0 5px"
         }}>
+          
           <Carousel
             data={data}
             time={2000}
-            width="1400px"
+            width="1600"
             height="350px"
             captionStyle={captionStyle}
             radius="10px"
@@ -77,9 +80,9 @@ function AddNow() {
             thumbnailWidth="100px"
             style={{
               textAlign: "center",
-              maxWidth: "1400px",
+              maxWidth: "1600px",
               maxHeight: "500px",
-              margin: "30px auto",
+              margin: "20px 0",
             }}
           />
         </div>

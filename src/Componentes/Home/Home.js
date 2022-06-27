@@ -8,6 +8,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
+import { Carousel } from 'react-carousel-minimal';
+import Ranking from "../Ranking/Ranking.js"
+
+//import AddNow from "../AddNow/AddNow.js";
 
 function Home(props) {
   let token = sessionStorage.getItem("token");
@@ -28,11 +32,70 @@ function Home(props) {
       });
   }, [setMoviesList]);
 
+  const [detailMovie, setDetailMovie] = useState([]);
+
+  const captionStyle = {
+    fontSize: '2em',
+    fontWeight: 'bold',
+  }
+  const slideNumberStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  }
+  const data = [
+      {
+        image: "https://api.themoviedb.org/3/discover/movie?api_key=2d042291f5d9997fd302638a2ac82ed8&language=es-ES&page=1",
+        caption: "San Francisco"
+      },]
+
+
   return (
     <div>
+
+{/* <div className="App">
+      <div style={{ textAlign: "center" }}>
+        <h2 className='titleDetails'>Películas Recomendadas</h2> */}
+        {/* <p>Easy to use, responsive and customizable carousel component for React Projects.</p> */}
+        {/* <div style={{
+          padding: "0 5px"
+        }}>
+           {detailMovie.map((dataCarrusel) => {
+          <Carousel
+            key={dataCarrusel.id}
+            data={dataCarrusel}
+            time={2000}
+            width="1600"
+            height="350px"
+            captionStyle={captionStyle}
+            radius="10px"
+            slideNumber={true}
+            slideNumberStyle={slideNumberStyle}
+            captionPosition="bottom"
+            automatic={true}
+            dots={true}
+            pauseIconColor="white"
+            pauseIconSize="40px"
+            slideBackgroundColor="darkgrey"
+            slideImageFit="cover"
+            thumbnails={true}
+            thumbnailWidth="100px"
+            style={{
+              textAlign: "center",
+              maxWidth: "1600px",
+              maxHeight: "500px",
+              margin: "20px 0",
+            }}
+          />
+         })}
+        </div>
+      </div>
+    </div> */}
+
+      
       <AddNow />
+
       <InfoMovie />
-      {/* <SignIn/> */}
+     <Ranking />
 
       {!token && <Link to="/" />}
       {/* estructura basica */}
