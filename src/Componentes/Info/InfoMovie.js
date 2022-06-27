@@ -4,7 +4,6 @@ import "../Info/infoMovie.css";
 function InfoMovie() {
   return (
 
-
     <div className="bodyHome">
       <div className="top">
         <div className="columns">
