@@ -63,9 +63,7 @@ console.log(filterMovie);
                         console.log(item);
                       }
                     }))
-              
-                    // data.filter(pais => pais.name.common == "New Zealand")
-                //     console.log(busquedaPais)
+            
               
                     break; // al encontrar este 'break' no se continuará con el siguiente 'default:'
               
@@ -92,7 +90,7 @@ console.log(filterMovie);
                         // console.log(item.poster_path);
                         
                         return item
-                        // navegacion("/StarFilter" );
+                       navegacion("/StarFilter" );
                         
                         
                       }
@@ -114,9 +112,10 @@ console.log(filterMovie);
                 }
                 console.log(rateMovie);
                 
-                swal(`Are you sure you want to give ${givenRating} stars ?`);
+                //swal(`Are you sure you want to give ${givenRating} stars ?`);
                 localStorage.setItem('filtromovie', JSON.stringify(filterMovie))
                 navegacion(`/StarFilter`);
+                console.log(filterMovie)
 
               }}
             />

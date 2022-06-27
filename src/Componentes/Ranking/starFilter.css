@@ -1,0 +1,17 @@
+
+.bodyStar{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.titleResults{
+    display: flex;
+    margin: 15px;
+    gap: 20px;
+}
+.cardbodyResults p{
+display: flex;
+}
